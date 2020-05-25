@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import './Story.scss';
+import "./Story.scss";
 
 const Story = ({ story, user, handleClose }) => {
   return (

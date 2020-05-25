@@ -5,15 +5,39 @@ import Story from "../../components/Story";
 import "./Stories.scss";
 
 const Stories = ({ stories, getUserHandler }) => {
+  let [showStory, setShowStory] = useState(false);
   return (
     <React.Fragment>
-      <section className='stories'>
-        <div className='container'></div>
-      </section>
+      <section className="stories">
+        <div className="container">
+          <button className={"user__thumb user__thumb--hasNew"}>
+            <div className="user__thumb__wrapper">
+              <img
+                src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/black-panther/black-panther-profile.jpg"
+                alt="T'Challa"
+              />
+            </div>
+          </button>
+          <button className="user__thumb false">
+            <div className="user__thumb__wrapper">
+              <img
+                src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/bruce/bruce-profile.jpg"
+                alt="Bruce Wayne"
+              />
+            </div>
+          </button>
+          <button className="user__thumb false">
+            <div className="user__thumb__wrapper">
+              <img
+                src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/gamora/gamora-profile.jpg"
+                alt="Gamora"
+              />
+            </div>
+          </button>
+        </div>
 
-      {/* {showStory = true && (
-        <Story />
-        )} */}
+        {showStory && <Story />}
+      </section>
     </React.Fragment>
   );
 };
