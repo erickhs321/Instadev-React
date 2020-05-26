@@ -8,12 +8,12 @@ const Post = ({ postInfo, userInfo }) => {
     <article className="post" data-testid="post">
       <header className="post__header">
         <div className="user">
-          <a className="user__thumb" href="/users/blackpanther">
+          <Link className="user__thumb" to="/users/blackpanther">
             <img
               src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/black-panther/black-panther-profile.jpg"
               alt="T'Challa"
             />
-          </a>
+          </Link>
           <Link className="user__name" to="/users/blackpanther">
             T'Challa
           </Link>
@@ -35,8 +35,8 @@ const Post = ({ postInfo, userInfo }) => {
         <div className="post__status">
           <div className="user">
             <span>
-              curtido por <a href="/">Santino Rowe</a> e outra{" "}
-              <a href="/">1 pessoa.</a>
+              curtido por <Link to="/">Santino Rowe</Link> e outra{" "}
+              <Link to="/">1 pessoa.</Link>
             </span>
           </div>
         </div>

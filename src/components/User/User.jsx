@@ -3,12 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const User = ({ infoUser }) => {
-  // const { avatar, name, username } = infoUser;
+  const { avatar, name, username } = infoUser || "";
 
   return (
     <article className="post">
       <header class="post__header">
-        <Link class="user" href="/users/blackpanther">
+        <Link class="user" to="/users/blackpanther">
           <div class="user__thumb">
             <img
               src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/black-panther/black-panther-profile.jpg"
