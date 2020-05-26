@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import Post from '../../components/Post';
+import Post from "../../components/Post";
 
-import './UserPosts.scss';
+import "./UserPosts.scss";
 
 const UserPosts = ({ posts }) => (
   <div className="container">
+    <section className="user-posts">
+      <Post isInProfile={true} />
+    </section>
   </div>
 );
 

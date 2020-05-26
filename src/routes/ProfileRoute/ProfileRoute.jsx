@@ -9,6 +9,7 @@ const ProfileRoute = () => {
   return (
     <div>
       <UserProfile />
+      <UserPosts />
     </div>
   );
 };
