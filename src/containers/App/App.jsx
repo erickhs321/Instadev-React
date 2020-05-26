@@ -9,7 +9,9 @@ import "./App.scss";
 
 const App = () => (
   <div>
-    <Routes />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </div>
 );
 

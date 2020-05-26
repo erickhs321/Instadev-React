@@ -11,6 +11,7 @@ const FeedRoute = () => {
   return (
     <div>
       <Stories />
+      <Posts />
     </div>
   );
 };

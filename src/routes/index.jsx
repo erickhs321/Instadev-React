@@ -7,29 +7,27 @@ import ProfileRoute from "./ProfileRoute";
 import NewUserRoute from "./NewUserRoute";
 import TopBar from "../components/Topbar/";
 const Routes = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/">
-        <TopBar />
-        <FeedRoute />
-      </Route>
+  <Switch>
+    <Route exact path="/">
+      <TopBar />
+      <FeedRoute />
+    </Route>
 
-      <Route exact path="/users">
-        <TopBar />
-        <UsersRoute />
-      </Route>
+    <Route exact path="/users">
+      <TopBar />
+      <UsersRoute />
+    </Route>
 
-      <Route path="/users/:username">
-        <TopBar />
-        <ProfileRoute />
-      </Route>
+    <Route path="/users/:username">
+      <TopBar />
+      <ProfileRoute />
+    </Route>
 
-      <Route path="/newuser">
-        <TopBar />
-        <NewUserRoute />
-      </Route>
-    </Switch>
-  </BrowserRouter>
+    <Route path="/newuser">
+      <TopBar />
+      <NewUserRoute />
+    </Route>
+  </Switch>
 );
 
 export default Routes;
