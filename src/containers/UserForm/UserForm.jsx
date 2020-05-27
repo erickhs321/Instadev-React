@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import SuccessMessage from '../../components/SuccessMessage';
+import SuccessMessage from "../../components/SuccessMessage";
+import UserProfile from "../UserProfile";
 
-import './UserForm.scss';
+import "./UserForm.scss";
 
 const UserForm = () => {
   return (
     <React.Fragment>
+      <UserProfile />
     </React.Fragment>
   );
 };

@@ -8,8 +8,11 @@ import "./UsersList.scss";
 const UersList = ({ users }) => {
   return (
     <section className="users-list">
-      <User />
-      <User />
+      <article className="post" data-testid="user">
+        <header class="post__header">
+          <User showUsername={true} />
+        </header>
+      </article>
     </section>
   );
 };

@@ -1,24 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import User from "../User";
 
 import "./Post.scss";
 
-const Post = ({ postInfo, userInfo, isInProfile }) => {
+const Post = ({ postInfo, userInfo, showOnlyFigure }) => {
   return (
     <article className="post" data-testid="post">
-      {!isInProfile && (
+      {!showOnlyFigure && (
         <header className="post__header">
-          <div className="user">
-            <Link className="user__thumb" to="/users/blackpanther">
-              <img
-                src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/black-panther/black-panther-profile.jpg"
-                alt="T'Challa"
-              />
-            </Link>
-            <Link className="user__name" to="/users/blackpanther">
-              T'Challa
-            </Link>
-          </div>
+          <User />
           <button className="post__context">
             <span className="follow-btn">Seguir</span>
           </button>
@@ -30,7 +21,7 @@ const Post = ({ postInfo, userInfo, isInProfile }) => {
           alt=""
         />
       </figure>
-      {!isInProfile && (
+      {!showOnlyFigure && (
         <nav className="post__controls">
           <button className="post__control">
             <i className="far fa-heart"></i>

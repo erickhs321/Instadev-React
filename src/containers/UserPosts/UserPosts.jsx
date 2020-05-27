@@ -7,7 +7,7 @@ import "./UserPosts.scss";
 const UserPosts = ({ posts }) => (
   <div className="container">
     <section className="user-posts">
-      <Post isInProfile={true} />
+      <Post showOnlyFigure={true} />
     </section>
   </div>
 );
