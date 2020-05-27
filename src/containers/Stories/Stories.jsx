@@ -8,7 +8,7 @@ const Stories = ({ stories, getUserHandler }) => {
   let [showStory, setShowStory] = useState(false);
   return (
     <React.Fragment>
-      <section className="stories">
+      <section className="stories" data-testid="stories">
         <div className="container">
           <button className={"user__thumb user__thumb--hasNew"}>
             <div className="user__thumb__wrapper">

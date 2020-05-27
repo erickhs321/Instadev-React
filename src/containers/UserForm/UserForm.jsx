@@ -9,7 +9,7 @@ const UserForm = () => {
   const [showSucessMessage, setShowSucessMessage] = useState(false);
   return (
     <React.Fragment>
-      <section className="post__form">
+      <section className="post__form" data-testid="user-form">
         <div className="container">
           <div className="post__form__wrapper">
             <label>Nome</label>

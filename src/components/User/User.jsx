@@ -6,7 +6,7 @@ const User = ({ userInfo }) => {
   const { avatar, name, username, showUsername } = userInfo || "";
 
   return (
-    <Link className="user" to="/users/blackpanther">
+    <Link className="user" to="/users/blackpanther" data-testid="user">
       <div className="user__thumb">
         <img
           src="https://viniciusvinna.netlify.app/assets//api-instagram/profiles/black-panther/black-panther-profile.jpg"
