@@ -9,7 +9,7 @@ const UersList = ({ users }) => {
   return (
     <section className="users-list">
       <article className="post" data-testid="user">
-        <header class="post__header">
+        <header className="post__header">
           <User showUsername={true} />
         </header>
       </article>
